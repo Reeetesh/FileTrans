@@ -36,7 +36,7 @@ router.get("/:id", async (req, res) => {
       fileName: file.fileName,
       myFile: file.myFile,
       counter: file.webShareCount,
-      download_url: `${process.env.APP_BASE_URL}/download/${req.params.id}`,
+      download_url: `https://filetrans.onrender.com/download/${req.params.id}`,
       type:type
     });
   } catch (err) {
